@@ -150,7 +150,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": '$' + data['shipping_fee'] + (data['is_offshore_islands'] ? '（離島）' : ''),
+                                                        "text": (data['is_offshore_islands'] ? '（離島）' : '') + '$' + data['shipping_fee'],
                                                         "size": "sm",
                                                         "color": "#111111",
                                                         "align": "end"
