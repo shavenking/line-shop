@@ -84,7 +84,7 @@
                                                         },
                                                         {
                                                             "type": "text",
-                                                            "text": `NT. ${orderItem['price']} x ${orderItem['quantity']}`,
+                                                            "text": '$' + `${orderItem['price']} x ${orderItem['quantity']}`,
                                                             "size": "sm",
                                                             "color": "#111111",
                                                             "align": "end"
@@ -92,6 +92,20 @@
                                                     ]
                                                 }
                                             }),
+                                            {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": [
+                                                    {
+                                                        "type": "text",
+                                                        "text": `*贈70元商品x ${orderItem['giveaway_quantity']} 份`,
+                                                        "wrap": true,
+                                                        "size": "sm",
+                                                        "color": "#111111",
+                                                        "align": "end"
+                                                    }
+                                                ]
+                                            },
                                             {
                                                 "type": "separator",
                                                 "margin": "xxl"
@@ -109,7 +123,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": 'NT. ' + data['order_item_total'],
+                                                        "text": '$' + data['order_item_total'],
                                                         "size": "sm",
                                                         "color": "#111111",
                                                         "align": "end"
@@ -128,7 +142,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": 'NT. ' + data['shipping_fee'],
+                                                        "text": '$' + data['shipping_fee'],
                                                         "size": "sm",
                                                         "color": "#111111",
                                                         "align": "end"
@@ -147,7 +161,7 @@
                                                     },
                                                     {
                                                         "type": "text",
-                                                        "text": 'NT. ' + data['total_amount'],
+                                                        "text": '$' + data['total_amount'],
                                                         "size": "sm",
                                                         "color": "#111111",
                                                         "align": "end"
@@ -179,7 +193,7 @@
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "銀行：臺新銀行 敦南分行 812",
+                                                "text": "銀行：台新銀行 敦南分行 812",
                                                 "size": "sm",
                                                 "color": "#555555"
                                             },
@@ -211,6 +225,32 @@
                                         ]
                                     },
                                     {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "到貨日期：" + data['arrival_date'],
+                                                "wrap": true,
+                                                "size": "sm",
+                                                "color": "#555555"
+                                            },
+                                        ]
+                                    },
+                                    {
+                                        "type": "box",
+                                        "layout": "horizontal",
+                                        "contents": [
+                                            {
+                                                "type": "text",
+                                                "text": "到貨時段：" + data['arrival_time'],
+                                                "wrap": true,
+                                                "size": "sm",
+                                                "color": "#555555"
+                                            },
+                                        ]
+                                    },
+                                    {
                                         "type": "separator",
                                         "margin": "xxl"
                                     },
@@ -221,29 +261,7 @@
                                         "contents": [
                                             {
                                                 "type": "text",
-                                                "text": "訂購人",
-                                                "size": "xs",
-                                                "color": "#aaaaaa",
-                                                "flex": 0
-                                            },
-                                            {
-                                                "type": "text",
-                                                "text": data['purchaser_name'],
-                                                "color": "#aaaaaa",
-                                                "size": "xs",
-                                                "align": "end",
-                                                "wrap": true
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "margin": "md",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "如有問題請，都可以在下方留言，我們會儘速爲您服務～",
+                                                "text": '如有問題，請在下方留言，我們會儘速爲您服務～',
                                                 "wrap": true,
                                                 "size": "xs",
                                                 "color": "#aaaaaa",

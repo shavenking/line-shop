@@ -35,7 +35,7 @@ class GoogleFormSubmitted implements ShouldBroadcast
      */
     public function broadcastOn()
     {
-        $sha1 = sha1($this->data['purchaser_name']);
+        $sha1 = sha1($this->data['line_name']);
 
         return new Channel('google-forms.'.$sha1);
     }
