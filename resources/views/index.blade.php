@@ -8,7 +8,7 @@
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </head>
-<body>
+<body style="margin: 0">
 <div style="height: 100vh; width: 100vw">
     <iframe id="gform" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
 </div>
