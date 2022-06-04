@@ -6,6 +6,7 @@
 
     <title>新竹梅屁股</title>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body style="margin: 0">
@@ -25,12 +26,15 @@
             if (onloadCount > 1) {
                 onloadCount = 0;
 
-                alert('訂單金額計算中，請勿關閉視窗');
+                Swal.fire({
+                    title: '下單成功',
+                    text: '訂單金額計算中，請勿關閉視窗',
+                })
             }
         }
         iframe.src = `
                     {{ config('line-shop.g_form_url') }}
-                    &{{ config('line-shop.g_form_purchaser_entry') }}=${lineProfile.name}
+        &{{ config('line-shop.g_form_purchaser_entry') }}=${lineProfile.name}
                 `;
 
         Echo.channel(`google-forms.${sha1(lineProfile.name).toString()}`)
