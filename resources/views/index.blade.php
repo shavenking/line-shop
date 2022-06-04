@@ -109,7 +109,11 @@
                                                         "align": "end"
                                                     }
                                                 ]
-                                            } : null,
+                                            } : {
+                                                "type": "box",
+                                                "layout": "horizontal",
+                                                "contents": []
+                                            },
                                             {
                                                 "type": "separator",
                                                 "margin": "xxl"
