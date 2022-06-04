@@ -24,7 +24,8 @@
             onloadCount += 1
             if (onloadCount > 1) {
                 onloadCount = 0;
-                // do something
+
+                alert('訂單金額計算中，請勿關閉視窗');
             }
         }
         iframe.src = `
