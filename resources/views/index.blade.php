@@ -11,7 +11,7 @@
 </head>
 <body style="margin: 0">
 <div style="height: 100vh; width: 100vw">
-    <iframe id="gform" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+    <iframe id="gform" src="" frameborder="0" style="width: 100%; height: 100%; min-height: 100%; border: none; background: #ff0000; display: block;"></iframe>
 </div>
 <script>
     liff.init({
