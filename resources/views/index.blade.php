@@ -287,7 +287,10 @@
                         }
                     }
                 ]).then(() => {
-                    liff.sendMessage(`
+                    liff.sendMessages([
+                        {
+                            type: 'text',
+                            text: `
                         訂購人：${data['purchaser_name']}
                         到貨日期：${data['arrival_date']}
                         希望到貨時段：${data['arrival_time']}
@@ -298,7 +301,9 @@
                         帳號：28881003432265
 
                         如有問題，請在下方留言，我們會儘速爲您服務～
-                    `).then(() => {
+                    `
+                        }
+                    ]).then(() => {
                         liff.closeWindow()
                     }).catch(err => {
                         alert(err)
