@@ -290,8 +290,7 @@
                     liff.sendMessages([
                         {
                             type: 'text',
-                            text: `
-訂購人：${data['purchaser_name']}
+                            text: `訂購人：${data['purchaser_name']}
 到貨日期：${data['arrival_date']}
 希望到貨時段：${data['arrival_time']}
 匯款期限：${data['last_money_transfer_date']} 晚上 12 點前，並留言給小編您的帳號後五碼，以方便我們對帳哦！
@@ -300,8 +299,7 @@
 銀行：台新銀行 敦南分行 812
 帳號：28881003432265
 
-如有問題，請在下方留言，我們會儘速爲您服務～
-                    `
+如有問題，請在下方留言，我們會儘速爲您服務～`
                         }
                     ]).then(() => {
                         liff.closeWindow()
