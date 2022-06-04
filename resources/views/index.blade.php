@@ -98,7 +98,7 @@
                                                 "contents": [
                                                     {
                                                         "type": "text",
-                                                        "text": `*贈70元商品x ${orderItem['giveaway_quantity']} 份`,
+                                                        "text": `*贈70元商品x ${data['giveaway_quantity']} 份`,
                                                         "wrap": true,
                                                         "size": "sm",
                                                         "color": "#111111",
