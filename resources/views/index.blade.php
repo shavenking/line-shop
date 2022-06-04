@@ -92,7 +92,7 @@
                                                     ]
                                                 }
                                             }),
-                                            {
+                                            data['giveaway_quantity'] > 0 ? {
                                                 "type": "box",
                                                 "layout": "horizontal",
                                                 "contents": [
@@ -105,7 +105,7 @@
                                                         "align": "end"
                                                     }
                                                 ]
-                                            },
+                                            } : null,
                                             {
                                                 "type": "separator",
                                                 "margin": "xxl"
