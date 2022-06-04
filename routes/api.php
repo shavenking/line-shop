@@ -31,7 +31,7 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
 
     $data['giveaway_quantity'] = floor($data['order_item_total'] / 1000);
     $data['is_offshore_islands'] = \Illuminate\Support\Str::contains($data['purchaser_address'], [
-        '澎湖', '金門', '馬祖', '綠島', '琉球',
+        '澎湖', '金門', '馬祖', '綠島', '琉球', '蘭嶼',
     ]);
 
     $data['shipping_fee'] = 0;
