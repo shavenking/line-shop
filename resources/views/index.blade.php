@@ -178,105 +178,105 @@
                                             }
                                         ]
                                     },
-                                    {
-                                        "type": "separator",
-                                        "margin": "xxl"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "margin": "md",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "戶名：黃香梅",
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "銀行：台新銀行 敦南分行 812",
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "帳號：28881003432265",
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "匯款期限：" + data['last_money_transfer_date'] + ' 晚上 12 點前，並留言給小編您的帳號後五碼，以方便我們對帳哦！',
-                                                "wrap": true,
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "到貨日期：" + data['arrival_date'],
-                                                "wrap": true,
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": "到貨時段：" + data['arrival_time'],
-                                                "wrap": true,
-                                                "size": "sm",
-                                                "color": "#555555"
-                                            },
-                                        ]
-                                    },
-                                    {
-                                        "type": "separator",
-                                        "margin": "xxl"
-                                    },
-                                    {
-                                        "type": "box",
-                                        "layout": "horizontal",
-                                        "margin": "md",
-                                        "contents": [
-                                            {
-                                                "type": "text",
-                                                "text": '如有問題，請在下方留言，我們會儘速爲您服務～',
-                                                "wrap": true,
-                                                "size": "xs",
-                                                "color": "#aaaaaa",
-                                                "flex": 0
-                                            },
-                                        ]
-                                    }
+                                    // {
+                                    //     "type": "separator",
+                                    //     "margin": "xxl"
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "margin": "md",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "戶名：黃香梅",
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         }
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "銀行：台新銀行 敦南分行 812",
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         },
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "帳號：28881003432265",
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         },
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "匯款期限：" + data['last_money_transfer_date'] + ' 晚上 12 點前，並留言給小編您的帳號後五碼，以方便我們對帳哦！',
+                                    //             "wrap": true,
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         },
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "到貨日期：" + data['arrival_date'],
+                                    //             "wrap": true,
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         },
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": "到貨時段：" + data['arrival_time'],
+                                    //             "wrap": true,
+                                    //             "size": "sm",
+                                    //             "color": "#555555"
+                                    //         },
+                                    //     ]
+                                    // },
+                                    // {
+                                    //     "type": "separator",
+                                    //     "margin": "xxl"
+                                    // },
+                                    // {
+                                    //     "type": "box",
+                                    //     "layout": "horizontal",
+                                    //     "margin": "md",
+                                    //     "contents": [
+                                    //         {
+                                    //             "type": "text",
+                                    //             "text": '如有問題，請在下方留言，我們會儘速爲您服務～',
+                                    //             "wrap": true,
+                                    //             "size": "xs",
+                                    //             "color": "#aaaaaa",
+                                    //             "flex": 0
+                                    //         },
+                                    //     ]
+                                    // }
                                 ]
                             },
                             "styles": {
@@ -287,7 +287,22 @@
                         }
                     }
                 ]).then(() => {
-                    liff.closeWindow()
+                    liff.sendMessage(`
+                        訂購人：${data['purchaser_name']}
+                        到貨日期：${data['arrival_date']}
+                        希望到貨時段：${data['arrival_time']}
+                        匯款期限：${data['last_money_transfer_date']} 晚上 12 點前，並留言給小編您的帳號後五碼，以方便我們對帳哦！
+
+                        戶名：黃香梅
+                        銀行：台新銀行 敦南分行 812
+                        帳號：28881003432265
+
+                        如有問題，請在下方留言，我們會儘速爲您服務～
+                    `).then(() => {
+                        liff.closeWindow()
+                    }).catch(err => {
+                        alert(err)
+                    })
                 }).catch(err => {
                     alert(err)
                 })
