@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>新竹梅屁股</title>
-    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
     <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body>
+<div style="height: 100vh; width: 100vw">
+    <iframe id="gform" src="" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+</div>
 <script>
     liff.init({
         liffId: {{ \Illuminate\Support\Js::from(config('line-shop.liff_id')) }}, // Use own liffId
         withLoginOnExternalBrowser: true,
     }).then(() => {
         const lineProfile = liff.getDecodedIDToken();
-        const iframe = document.createElement('iframe');
+        const iframe = document.getElementById('gform');
         let onloadCount = 0;
-        iframe.className = 'w-screen h-screen'
         iframe.onload = () => {
             onloadCount += 1
             if (onloadCount > 1) {
@@ -30,8 +31,6 @@
                     {{ config('line-shop.g_form_url') }}
                     &{{ config('line-shop.g_form_purchaser_entry') }}=${lineProfile.name}
                 `;
-
-        document.body.appendChild(iframe);
 
         Echo.channel(`google-forms.${sha1(lineProfile.name).toString()}`)
             .listen('GoogleFormSubmitted', (e) => {
