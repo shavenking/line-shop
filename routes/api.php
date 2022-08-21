@@ -64,7 +64,7 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
         }
     }
 
-    $data['last_money_transfer_date'] = today()->addDays(3)->format('m/d');
+    $data['last_money_transfer_date'] = today()->addDays(1)->format('m/d');
     $data['total_amount'] = $data['order_item_total'] + $data['shipping_fee'];
 
     \App\Events\GoogleFormSubmitted::dispatch($data);
