@@ -15,7 +15,7 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
         ['name' => '雞腳', 'quantity' => (int) $request->input(13), 'price' => 70],
         ['name' => '鵪鶉蛋', 'quantity' => (int) $request->input(14), 'price' => 70],
         ['name' => '豆干', 'quantity' => (int) $request->input(15), 'price' => 70],
-        ['name' => '三杯米血', 'quantity' => (int) $request->input(16), 'price' => 70],
+//        ['name' => '三杯米血', 'quantity' => (int) $request->input(16), 'price' => 70],
     ];
 
     $data = [
@@ -26,7 +26,7 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
         'arrival_date'          => $request->input(7),
         'arrival_time'          => $request->input(8),
         'order_items'           => collect($orderItems)->where('quantity', '>', 0)->values()->all(),
-        'line_name'             => $request->input(17),
+        'line_name'             => $request->input(16),
     ];
 
     $data['order_item_total'] = collect($data['order_items'])->reduce(function ($total, $orderItem) {
