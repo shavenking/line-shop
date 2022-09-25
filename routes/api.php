@@ -3,10 +3,6 @@
 use Illuminate\Support\Facades\Route;
 
 Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request) {
-    \Illuminate\Support\Facades\Log::debug('google-form-webhook-request', [
-        'request' => $request->all(),
-    ]);
-
     $orderItems = [
         ['name' => '七里香', 'quantity' => $request->input(9), 'price' => 100],
         ['name' => '雞胗', 'quantity' => $request->input(10), 'price' => 100],
