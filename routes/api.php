@@ -8,14 +8,14 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
     ]);
 
     $orderItems = [
-        ['name' => '七里香', 'quantity' => $request->input(9), 'price' => 100],
-        ['name' => '雞胗', 'quantity' => $request->input(10), 'price' => 100],
-        ['name' => '雞翅', 'quantity' => $request->input(11), 'price' => 120],
-        ['name' => '棒棒腿', 'quantity' => $request->input(12), 'price' => 100],
-        ['name' => '雞腳', 'quantity' => $request->input(13), 'price' => 70],
-        ['name' => '鵪鶉蛋', 'quantity' => $request->input(14), 'price' => 70],
-        ['name' => '豆干', 'quantity' => $request->input(15), 'price' => 70],
-        ['name' => '三杯米血', 'quantity' => $request->input(16), 'price' => 70],
+        ['name' => '七里香', 'quantity' => (int) $request->input(9), 'price' => 100],
+        ['name' => '雞胗', 'quantity' => (int) $request->input(10), 'price' => 100],
+        ['name' => '雞翅', 'quantity' => (int) $request->input(11), 'price' => 120],
+        ['name' => '棒棒腿', 'quantity' => (int) $request->input(12), 'price' => 100],
+        ['name' => '雞腳', 'quantity' => (int) $request->input(13), 'price' => 70],
+        ['name' => '鵪鶉蛋', 'quantity' => (int) $request->input(14), 'price' => 70],
+        ['name' => '豆干', 'quantity' => (int) $request->input(15), 'price' => 70],
+        ['name' => '三杯米血', 'quantity' => (int) $request->input(16), 'price' => 70],
     ];
 
     $data = [
