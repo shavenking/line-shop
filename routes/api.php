@@ -8,13 +8,13 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
     ]);
 
     $orderItems = [
-        ['name' => '七里香', 'quantity' => (int) $request->input(9), 'price' => 100],
-        ['name' => '雞胗', 'quantity' => (int) $request->input(10), 'price' => 100],
-        ['name' => '雞翅', 'quantity' => (int) $request->input(11), 'price' => 120],
-        ['name' => '棒棒腿', 'quantity' => (int) $request->input(12), 'price' => 100],
-        ['name' => '雞腳', 'quantity' => (int) $request->input(13), 'price' => 70],
-        ['name' => '鵪鶉蛋', 'quantity' => (int) $request->input(14), 'price' => 70],
-        ['name' => '豆干', 'quantity' => (int) $request->input(15), 'price' => 70],
+        ['name' => '七里香', 'quantity' => (int) $request->input(9), 'price' => 110],
+        ['name' => '雞胗', 'quantity' => (int) $request->input(10), 'price' => 110],
+        ['name' => '雞翅', 'quantity' => (int) $request->input(11), 'price' => 135],
+        ['name' => '棒棒腿', 'quantity' => (int) $request->input(12), 'price' => 120],
+        ['name' => '雞腳', 'quantity' => (int) $request->input(13), 'price' => 80],
+        ['name' => '鵪鶉蛋', 'quantity' => (int) $request->input(14), 'price' => 80],
+        ['name' => '豆干', 'quantity' => (int) $request->input(15), 'price' => 80],
 //        ['name' => '三杯米血', 'quantity' => (int) $request->input(16), 'price' => 70],
     ];
 
@@ -33,7 +33,7 @@ Route::post('/google-form-webhook', function (\Illuminate\Http\Request $request)
         return $total + $orderItem['quantity'] * $orderItem['price'];
     });
 
-    $data['giveaway_quantity'] = floor($data['order_item_total'] / 1500);
+    $data['giveaway_quantity'] = 0; // floor($data['order_item_total'] / 1500); 取消活動囉～～
     $data['is_offshore_islands'] = \Illuminate\Support\Str::contains($data['purchaser_address'], [
         '澎湖', '金門', '馬祖', '綠島', '琉球', '蘭嶼',
     ]);

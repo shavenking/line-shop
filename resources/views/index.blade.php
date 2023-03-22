@@ -291,6 +291,8 @@
                         {
                             type: 'text',
                             text: `訂購人：${data['purchaser_name']}
+訂購人電話：${data['purchaser_phone']}
+收件地址：${data['purchaser_address']}
 到貨日期：${data['arrival_date']}
 希望到貨時段：${data['arrival_time']}
 匯款期限：${data['last_money_transfer_date']} 晚上 12 點前，並留言給小編您的帳號後五碼，以方便我們對帳哦！
